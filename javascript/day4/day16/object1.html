@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+        let obj = {
+            name: "abc",
+            id: 123,
+            role: "web developer",
+            sal: "10k"
+        }
+        console.log(obj);
+        console.log(obj.name);
+        obj.name = "xyz"
+        console.log(obj);
+        delete obj.name
+        console.log(obj);
+        obj.address = "benglore"
+        console.log(obj);
+        console.log(Object.isSealed(obj));
+        Object.seal(obj)
+        console.log(Object.isSealed(obj));
+
+        //insertion is not possible after sealing the object
+        obj.name = "pqr"
+        console.log(obj);
+
+        //update is possible after sealing the object
+        obj.name = "pqr"
+        console.log(obj);
+
+        //updation is possible after sealing the object
+        obj.id = 987
+        console.log(obj);
+
+        //deletion is not possible after sealing the object
+        delete obj.id
+        console.log(obj);
+
+        //freezing the object
+        console.log(Object.isFrozen(obj));
+        Object.freeze(obj)
+        console.log(Object.isFrozen(obj));
+
+        //insertion is not possible after freezing the object
+        obj.name = "mnbvcjhg"
+        console.log(obj);
+
+        //updation is not possible after freezing the object
+        obj.id = 987
+        console.log(obj);
+
+        //deletion is not possible after freezing the object
+        delete obj.id
+        console.log(obj);
+
+        let k = Object.keys(obj)
+        console.log(k);
+        for (let i of k) {
+            console.log(i);
+        }
+
+        let v = Object.values(obj)
+        console.log(v);
+        for (let i of v) {
+            console.log(i);
+        }
+
+        let kv = Object.entries(obj)
+        for (let i of kv) {
+            console.log(i);
+        }
+
+        let obj2 = {
+            name: "xyz",
+            id: 123
+        }
+        console.log(obj2);
+
+        let obj3 = {
+            address: "benglore",
+            id: 4567
+        }
+        console.log(obj3);
+
+        //assigning
+        let r = Object.assign(obj2, obj3)
+        console.log(r);
+
+
+        //json
+
+        let obj4 = {
+            name: "abc",
+            id: 123
+        }
+        console.log(obj4);
+        let d = JSON.stringify(obj4)
+        console.log(d);
+        console.log(JSON.parse(d));
+    </script>
+
+</body>
+
+</html>

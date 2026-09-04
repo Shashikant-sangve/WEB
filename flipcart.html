@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <title>Flipkart</title>
+
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+        }
+
+        body{
+            font-family:cursive;
+        }
+
+        /* Top Menu */
+
+        .container{
+            padding:15px;
+        }
+
+        .container a{
+            text-decoration:none;
+            font-size:20px;
+            background-color:rgb(231,227,227);
+            color:black;
+            padding:5px 20px;
+            border-radius:10px;
+            margin-right:20px;
+        }
+
+        #flipkart{
+            background-color:yellow;
+            font-weight:bold;
+        }
+
+        /* Navigation */
+
+        nav{
+            display:flex;
+            align-items:center;
+            padding:20px;
+        }
+
+        .search{
+            display:flex;
+            align-items:center;
+            border:2px solid blue;
+            border-radius:10px;
+            padding:10px;
+            width:800px;
+        }
+
+        .search i{
+            font-size:20px;
+            margin-right:10px;
+        }
+
+        .search input{
+            width:100%;
+            border:none;
+            outline:none;
+            font-size:18px;
+            font-family:cursive;
+        }
+
+        /* Push right items */
+
+        .right{
+            margin-left:auto;
+            display:flex;
+            align-items:center;
+        }
+
+        .right button{
+            background:none;
+            border:none;
+            font-size:20px;
+            font-family:cursive;
+            margin-left:30px;
+            cursor:pointer;
+        }
+
+        .right a{
+            text-decoration:none;
+            color:black;
+            font-size:20px;
+            margin-left:30px;
+        }
+
+        ::placeholder{
+            font-size:18px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <a href="#" id="flipkart">Flipkart</a>
+        <a href="#">🏍 Minutes</a>
+        <a href="#">✈️ Travels</a>
+        <a href="#">🛒 Grocery</a>
+    </div>
+
+    <nav>
+
+        <div class="search">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <input type="text"
+            placeholder="Search for Products, Brands and More">
+        </div>
+
+        <div class="right">
+
+            <button>
+                <i class="fa-solid fa-circle-user"></i>
+                Login
+            </button>
+
+            <a href="#">
+                More
+            </a>
+
+            <a href="#">
+                <i class="fa-solid fa-cart-shopping"></i>
+                Cart
+            </a>
+
+        </div>
+
+    </nav>
+
+    <hr>
+
+</body>
+</html>

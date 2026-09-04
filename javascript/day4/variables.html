@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        var a = 10;
+        console.log(a);
+        console.log(window);
+        let a1 = 20;
+        console.log(a1);
+        const a2 = 25;
+        console.log(a2);
+        console.log(window);
+
+
+        //hoisting
+        // console.log(a3); //undefined
+        // var b = 22
+        // console.log(b); //22
+
+        //console.log(b1);//syntax error
+        let b1 = 24
+        console.log(b1); //24
+
+        //console.log(b2);//syntax error
+        const b2 = 30
+        console.log(b2); //30
+
+        //declaration 
+        var x
+        console.log(x); //undefined
+
+        let y
+        console.log(y); //undefined
+
+        //const z //syntax error
+        //console.log(z); //syntax error
+
+        //initialization
+        x = 12
+        console.log(x); //12
+
+        y = 27
+        console.log(y); //27
+
+        //z=13
+        //console.log(z); //syntax error
+
+        //declaration and initialization
+        var g = 28
+        console.log(g); //28
+
+        let g1 = 24
+        console.log(g1); //24
+
+        const g2 = 55
+        console.log(g2); //55
+
+
+        //re-initialization
+        g = 39
+        console.log(g); //39
+
+        g1 = 52
+        console.log(g1); //52
+
+        //g2 = 33
+        //console.log(g2); //syntax error
+
+
+        //re-declaration
+        var g = 3
+        console.log(g); //3
+
+        //let g1=60//error
+        //console.log(g1); //syntax error
+
+        //const g2=7//error
+        //console.log(g2); //syntax error
+    </script>
+</body>
+
+</html>

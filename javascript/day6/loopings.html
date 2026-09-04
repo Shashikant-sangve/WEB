@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+        //for loop
+        for (let i = 0; i < 5; i++) {
+            console.log("hello js");
+        }
+        for (let i = 0; i < 5; i++) {
+            console.log("hello js " + i);
+        }
+        let str = "";
+        for (let i = 0; i < 5; i++) {
+            str += "hello js "
+            str += "\n"
+        }
+        console.log(str);
+
+
+        let i = 1;
+        while (i <= 5) {
+            console.log("hello js " + i);
+            i++;
+        }
+
+        let j = 1;
+        do {
+            console.log("hello js ");
+            j++;
+        } while (j <= 5)
+
+
+
+
+        let res = "";
+        for (let i = 1; i <= 5; i++) {
+            res += "*";
+            // res += "\n";
+        }
+        console.log(res);
+
+
+        document.write("hello js <br>");
+        document.writeln("hello js <br>");
+
+        let res2 = "";
+        for (let i = 1; i <= 5; i++) {
+            // res2 += "\n";
+            for (let j = 1; j <= 5; j++) {
+                res2 += "* ";
+                document.write("* ");
+            }
+            res2 += "\n";
+            document.write("<br>");
+        }
+        console.log(res2);
+
+        document.write("<h1>hello js</h1>");
+
+
+        let res3 = "";
+        for (let i = 1; i <= 5; i++) {
+            // res3 += "\n";
+            for (let j = 1; j <= i; j++) {
+                res3 += "* ";
+            }
+            res3 += "\n";
+        }
+        console.log(res3);
+
+        let res4 = "";
+        for (let i = 5; i >= 1; i--) {
+
+            // res4 += "\n";
+            for (let j = 1; j <= i; j++) {
+                res4 += "* ";
+            }
+            res4 += "\n";
+        }
+        console.log(res4);
+
+        let res1 = "";
+        for (let i = 1; i <= 5; i++) {
+            // res1 += "\n";
+            for (let j = 1; j <= 5; j++) {
+                if (i == j || i + j == 6) {
+                    res1 += "*";
+                }
+                res1 += "  ";
+            }
+            res1 += "\n";
+        }
+        console.log(res1);
+
+
+        let res6 = "";
+        let sp = 4
+        for (let i = 1; i <= 5; i++) {
+            // res6 += "\n";
+            for (let j = 1; j <= sp; j++) {
+                res6 += " "
+            }
+            for (let k = 1; k <= i; k++) {
+                res6 += "*";
+            }
+            res6 += "\n";
+            sp--;
+        }
+        console.log(res6);
+
+
+        let res7 = "";
+        let sp1 = 0
+        for (let i = 5; i >= 1; i--) {
+            // res7 += "\n";
+            for (let j = 1; j <= sp1; j++) {
+                res7 += " "
+            }
+            for (let k = 1; k <= i; k++) {
+                res7 += "*";
+            }
+            res7 += "\n";
+            sp1++;
+        }
+        console.log(res7);
+
+        let res8 = "";
+        let sp2 = 5
+        for (let i = 1; i <= 5; i++) {
+            // res8 += "\n";
+            for (let j = 1; j <= sp2; j++) {
+                res8 += " "
+            }
+            for (let k = 1; k <= i; k++) {
+                res8 += "* ";
+            }
+            res8 += "\n";
+            sp2--;
+        }
+        console.log(res8);
+
+
+
+        let res9 = "";
+        let sp3 = 5
+        for (let i = 1; i <= 5; i++) {
+            // res9 += "\n";
+            for (let j = 1; j <= sp3; j++) {
+                res9 += " "
+            }
+            for (let k = 1; k <= i; k++) {
+                res9 += "* ";
+            }
+            res9 += "\n";
+            sp3--;
+        }
+        console.log(res9);
+
+
+        function printDiamond(size) {
+            for (let i = 1; i <= size; i++) {
+                let row = "".padStart(size - i, " ") + "* ".repeat(i);
+                console.log(row);
+            }
+            for (let i = size - 1; i >= 1; i--) {
+                let row = "".padStart(size - i, " ") + "* ".repeat(i);
+                console.log(row);
+            }
+        }
+        printDiamond(8);
+
+        let res5 = "";
+        let space = 4
+        for (let i = 1; i <= 5; i--) {
+            for (let j = 1; j <= space; j++) {
+                res5 += " "
+
+                for (let k = 1; k <= i; k++) {
+                    res5 += "*";
+                }
+                res5 += "\n";
+            }
+        }
+        if (i < space) {
+            space++;
+            res += 2;
+        } else {
+            space--;
+            res -= 2;
+        }
+        console.log(res5);
+
+
+
+        let str2 = ""
+        for (let i = 1; i <= 5; i++) {
+            for (let j = 1; j <= 5; j++) {
+                if (i == 2 && j == 3 || i == 3 && (j == 2 || j == 4) || i == 4 && j == 3) {
+                    str2 += "*"
+                }
+            }
+            str2 += "\n"
+        }
+        console.log(str2);
+    </script>
+
+</body>
+
+</html>
+
+</html>

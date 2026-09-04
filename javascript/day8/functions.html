@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        function demo() {
+            console.log("hello");
+        }
+        demo()
+
+        function demo1(a, b) {
+            console.log(a + b);
+            console.log(a, b);
+        }
+        demo1()
+        demo1(5, 10)
+        demo1("hi", 5)
+        demo1(5 * 3, 4 * 2)
+            //more no of arguments and less no of parameters
+        function demo2(a, b) {
+            console.log(a, b);
+            console.log(arguments);
+        }
+
+        demo2(14, 13, 15, 16, 18)
+            //arguments object
+        function demo3() {
+            console.log(arguments)
+            console.log(arguments[0], arguments[1], arguments[2], arguments[3]);
+            console.log(arguments[8])
+        }
+
+        demo3(4, 3, 5, 6, 8)
+            // this keyword
+        var x = 20
+
+        function demo4() {
+            var x = 30
+            console.log(x); //30
+            console.log(this.x); //20
+            console.log(window.x); //20
+        }
+        demo4()
+        console.log(window);
+        //hoisting
+        demo5()
+
+        function
+        demo5() {
+            console.log("hello hoisting")
+        }
+
+        //this keyword
+        function demo6(a, b) {
+            console.log("hi");
+            console.log(a + b);
+            return "tata"
+        }
+
+        demo6(10, 20)
+        console.log(demo6);
+        console.log(demo6());
+        //prototype
+        //copy an object
+        function demo7() {
+            console.log("hello");
+        }
+
+        demo7()
+            //1st way
+        console.log("prototype " in demo7);
+        //2nd way
+        let d = new demo7()
+        console.log(Object.getPrototypeOf(d) == demo7.prototype);
+    </script>
+</body>
+
+</html>
+
+</html>

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>JavaJam Coffee House - Jobs</title>
+    <style>
+        body {
+            background-color: #f5e6cc;
+            font-family: Arial, sans-serif;
+        }
+
+        #container {
+            width: 900px;
+            margin: auto;
+            border: 2px solid chartreuse;
+            background-color: #fff8dc;
+        }
+
+        header {
+            background-color: rgb(red, green, blue);
+            color: #e60cbe;
+            text-align: center;
+            font-size: 40px;
+            padding: 15px;
+            font-family: Georgia, serif;
+        }
+
+        nav {
+            width: 150px;
+            float: left;
+            padding: 20px;
+            background-color: #05f0a9;
+            height: 400px;
+        }
+
+        nav a {
+            display: block;
+            text-decoration: none;
+            color: rgb(red, green, blue);
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+
+        main {
+            margin-left: 180px;
+            padding: 20px;
+        }
+
+        h2 {
+            color: #6abc06;
+        }
+
+        label {
+            display: inline-block;
+            width: 120px;
+            margin-top: 10px;
+        }
+
+        input, textarea {
+            margin-top: 10px;
+            padding: 5px;
+            width: 200px;
+        }
+
+        textarea {
+            height: 60px;
+        }
+
+        button {
+            margin-top: 15px;
+            padding: 5px 10px;
+        }
+
+        footer {
+            clear: both;
+            text-align: center;
+            padding: 10px;
+            background-color: #eea807;
+            font-size: 12px;
+        }
+    </style>
+</head>
+<body>
+
+<div id="container">
+
+    <header>
+        JavaJam Coffee House
+    </header>
+
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">Menu</a>
+        <a href="#">Music</a>
+        <a href="#">Jobs</a>
+    </nav>
+
+    <main>
+        <h2>Jobs at JavaJam</h2>
+        <p>
+            Want to work at JavaJam? Fill out the form below to start your application.
+            Required fields are marked with an asterisk *.
+        </p>
+
+        <form>
+            <label>*Name:</label>
+            <input type="text" required><br>
+
+            <label>*E-mail:</label>
+            <input type="email" required><br>
+
+            <label>Start Date:</label>
+            <input type="date"><br>
+
+            <label>*Experience:</label>
+            <textarea required></textarea><br>
+
+            <button type="submit">Apply Now</button>
+        </form>
+    </main>
+
+    <footer>
+        Copyright © 2014 JavaJam Coffee House <br>
+        shashisangve@email.com
+    </footer>
+
+</div>
+
+</body>
+</html>

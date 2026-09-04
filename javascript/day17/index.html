@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Indirect DOM accessing methods</h1>
+    <h1>Hello</h1>
+    <h2 id="heading">H2 element</h2>
+    //
+    <!-- <h3 id="heading">H3 element</h3>-->
+    <p class="para"></p>
+    <p class="para"></p>
+    <p class="para"></p>
+    <p class="para"></p>
+
+    <section name="sec"></section>
+    <section name="sec"></section>
+    <article name="art"></article>
+
+    <div>
+        <aside id=" aside "></aside>
+    </div>
+
+    <script>
+        let section = document.getElementsByTagName("section");
+        console.log(section);
+        let aside = document.getElementsByTagName("aside");
+        console.log(aside);
+        console.log(document.querySelector("h1"));
+    </script>
+
+
+
+    < header>
+        Hello
+        <aside id="aside">Hii</aside>
+
+        </header>
+
+        <div class="container">
+            <h1>Hii</h1>
+
+</body>
+
+</html>

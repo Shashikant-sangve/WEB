@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        //implicit typecasting
+
+        console.log("5a" * "5" + true * false - 1 * true + 50); //nan
+        console.log(5 + "5" * 20 + true * undefined - 5 + "20a"); //NaN20a
+        //5+5*20+
+
+
+
+
+
+
+
+
+        console.log(5 / 2 - 8 + "20" * true + "true" + true * 50 + 80 + true); //14.5true5080true
+        //2.5-8+20*1+"true"+1*50+80+true
+        //2.5-8+20+"true5080"+true
+        //14.5+true5080true
+        //14.5true5080true
+
+
+
+        //explicit typecasting
+        let a = 10,
+            b = "20"
+        console.log(a + b); //1020
+        console.log(a - b); //-10
+        console.log(a * b); //200
+        console.log(b / a); //2
+        console.log(b % a); //0
+        console.log(b++); //20
+        console.log(b); //21
+        console.log(a + b); //31
+        console.log(true * a); //10
+        console.log(true == "true"); //
+
+
+        //explicit typecasting
+
+        let x = 10,
+            y = "20"
+        console.log(x + Number(y)); //30);
+        console.log(String(x) + Number(y)); //1020
+        console.log(Boolean(50) - true * 60); //-59
+        console.log(Boolean(50)); //true
+        console.log(String(60) + String(true) * Boolean(-89) + Boolean("60)")); //60NaNtrue
+        console.log(String(2) * 20); //40
+        console.log();
+        console.log();
+    </script>
+
+</body>
+
+</html>

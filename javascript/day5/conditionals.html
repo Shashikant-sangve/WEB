@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+        //simple if
+        if (5 > 4) {
+            console.log("hi");
+        }
+
+        //if else
+        if (5 > 41) {
+            console.log("hello js");
+        } else {
+            console.log("good bye js");
+        }
+
+        //nested if else
+        if (5 > 4) {
+            console.log("hi");
+            if (5 > 6) {
+                console.log("hello js");
+            } else {
+                console.log("good bye js");
+            }
+        } else {
+            console.log("good bye js");
+        }
+
+        //else if ladder
+        if (5 > 4) {
+            console.log("hi");
+        } else if (5 > 6) {
+            console.log("hello js");
+        } else if (5 > 7) {
+            console.log("good bye js");
+        } else {
+            console.log("bye bye js");
+        }
+
+        //switch case
+        let a = "z"
+        switch (a) {
+            case "A":
+                console.log(a + " it is a vowel");
+                break;
+            case "E":
+                console.log(a + " it is a vowel");
+                break;
+            case "I":
+                console.log(a + " it is a vowel");
+                break;
+            case "O":
+                console.log(a + " it is a vowel");
+                break;
+            case "U":
+                console.log(a + " it is a vowel");
+                break;
+            case "a":
+                console.log(a + " it is a vowel");
+                break;
+            case "e":
+                console.log(a + " it is a vowel");
+                break;
+            case "i":
+                console.log(a + " it is a vowel");
+                break;
+            case "o":
+                console.log(a + " it is a vowel");
+                break;
+            case "u":
+                console.log(a + " it is a vowel");
+                break;
+            default:
+                console.log(a + " it is not a vowel");
+        }
+
+        //ternary operator
+        let a1 = 10,
+            b = 20,
+            c = 30,
+            d = 40,
+            e = 50;
+        let result = a1 > b ? "a is greater than b" : "a is not greater than b";
+        console.log(result);
+
+        let result1 = a1 > b ? (a1 > c ? "a is greater than c" : "a is not greater than c") :
+            (b > c ? "b is greater than c" : "b is not greater than c");
+        console.log(result1);
+
+        let result2 = a1 > b ? (a1 > c ? (a1 > d ? "a is greater than d" : "a is not greater than d") :
+                (c > d ? "c is greater than d" : "c is not greater than d")) :
+            (b > c ? (b > d ? "b is greater than d" : "b is not greater than d") :
+                (c > d ? "c is greater than d" : "c is not greater than d"));
+        console.log(result2);
+
+        let result3 = a1 > b ? (a1 > c ? (a1 > d ? (a1 > e ? "a is greater than e" : "a is not greater than e") :
+                    (c > d ? "c is greater than d" : "c is not greater than d")) :
+                (b > c ? (b > d ? "b is greater than d" : "b is not greater than d") :
+                    (c > d ? "c is greater than d" : "c is not greater than d"))) :
+            (b > c ? (b > d ? "b is greater than d" : "b is not greater than d") :
+                (c > d ? "c is greater than d" : "c is not greater than d"));
+        console.log(result3);
+    </script>
+
+</body>
+
+</html>
+
+</html>

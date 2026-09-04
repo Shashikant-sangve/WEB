@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        //literal way of creating an object
+        let obj = {}
+        console.log(obj);
+
+        let obj1 = {
+            carname: "BMW",
+            model: "X5",
+            price: 50000,
+            wheels: 4,
+        }
+        console.log(obj1);
+        console.log(obj1.carname);
+        console.log(obj1.model);
+        console.log(obj1.price);
+        console.log(obj1.wheels);
+
+        //new keyword way of creating an object
+        let obj2 = new Object();
+        console.log(obj2);
+
+        //constructor function way of creating an object
+        let obj3 = Object();
+        console.log(obj3);
+
+        //function constructor way of creating an object
+        function Car(name, id) {
+            this.name = name;
+            this.id = id;
+        }
+        let a = new Car("BMW", 1);
+        console.log(a);
+        console.log(a.name);
+        console.log(a.id);
+
+
+
+
+        //insertion
+        obj4.name = "abc"
+        console.log(obj4);
+        obj4.id = 12
+        console.log(obj4);
+        obj4.role = "webdev"
+        console.log(obj4);
+        obj4.sal = "12lpa"
+        console.log(obj4);
+
+
+        //updation
+
+        obj4.sal = "20lpa"
+        console.log(obj4);
+        obj4.role = "senior web dev"
+        console.log(obj4);
+
+
+        //delation
+        delete obj4.role
+        console.log(obj4);
+
+
+
+
+        //read
+    </script>
+
+</body>
+
+</html>

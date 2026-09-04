@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Document</title>
+    <style>
+        fieldset{
+            background-color: rgb(245, 237, 11);
+            margin-left: 300px;
+            margin-right: 300px;
+            margin-top: 40px;
+        }
+        .abc:hover
+        { 
+           background-color: greenyellow;
+           align-self: center;
+        }
+        .abc
+        {
+             height: 40px;
+             width: 100px;
+             
+        }
+
+      .container {
+    width: 100%;
+    overflow: hidden;
+     background-color: rgb(176, 12, 247);
+}
+
+.heading {
+    display: inline-block;
+    white-space: nowrap;
+    animation: moveText 15s linear infinite;
+}
+@keyframes moveText {
+    from {
+        transform: translateX(100%);
+    }
+    to {
+        transform: translateX(-100%);
+    }
+}
+.btn
+{
+    text-align: center;
+}
+    </style>
+</head>
+
+<body>
+    <div class="container">
+    <h1 class="heading" style="margin-left: 300px;">EMPLOYEE REGISTRATION FORM</h1>
+    </div>
+    <FORM> 
+        <fieldset>
+            <legend> Employee Details Form</legend>
+        <TABLE>
+        <tr>
+            <td><label>EMP NAME</label></td>
+            <TD><INPUT type="text"  placeholder="Enter EMP name"/></TD>
+        </tr>
+        <tr>
+            <td><label>EMP NUMBER</label></td>
+            <TD><INPUT type="text"  placeholder="Enter EMP NUM"/></TD>
+        </tr>
+         <tr>
+            <td><label>DEPT NUMBER</label></td>
+            <TD><INPUT type="text"  placeholder="Enter DEPT NUM"/></TD>
+        </tr>
+         <tr>
+            <td><label>DATE OF BIRTH</label></td>
+            <TD><INPUT type="DATE"  placeholder="Enter The Date"/></TD>
+        </tr>
+         <tr>
+            <td><label>MOBILE NUMBER</label></td>
+            <TD><INPUT type="NUMBER"  placeholder="Enter Mobile Number"/></TD>
+        </tr>
+         <tr>
+            <td><label>Email Id</label></td>
+            <TD><INPUT type="Email" placeholder="Enter The Email"/></TD>
+        </tr>
+         <tr>
+            <td><label>PASSWORD</label></td>
+            <TD><INPUT type="PASSWORD"  placeholder="Enter The Password"/></TD>
+        </tr>
+         <tr>
+           <td><label>LANGUAGES</label></td>
+            <TD><INPUT type="CHECKBOX"NAME="LANGUAGE"/>ENGLISH
+                <INPUT type="CHECKBOX"NAME="LANGUAGE"/>HINDI
+                <INPUT type="CHECKBOX"NAME="LANGUAGE"/>KANNADA
+                <INPUT type="CHECKBOX"NAME="LANGUAGE"/>MARATHI
+            </TD>
+        </tr>
+         <tr>
+            <td><label>GENDER</label></td>
+            <TD><INPUT type="RADIO" NAME="GENDER"/>MALE
+            <INPUT type="RADIO" NAME="GENDER"/>FEMALE
+            <INPUT type="RADIO" NAME="GENDER"/>OTHER
+        </TD>
+        </tr>
+        <tr>
+           <td><label>DEPARTMENT</label></td>
+            <TD><INPUT type="CHECKBOX" NAME="DEPARTMENT"/>DEVELOPMENT
+                <INPUT type="CHECKBOX"NAME="DEPARTMENT"/>TESTING
+                <INPUT type="CHECKBOX"NAME="DEPARTMENT"/>DATA SCIENCE
+                <INPUT type="CHECKBOX"NAME="DEPARTMENT"/>CYBER SECURITY
+            </TD>
+        </tr>
+        <TR>
+             <td><label>SELECT PHOTO</label></td>
+            <TD><INPUT type="FILE"/></TD>
+        </TR>
+        <TR>
+             <td><label>CITY</label></td>
+            <TD><INPUT type="TEXT"  placeholder="Enter The City"/></TD>
+        </TR>
+        <TR>
+             <td><label>ADDRESS</label></td>
+            <TD><TEXTAREA rows="4" cols="20"  placeholder="Enter The Address"></TEXTAREA></TD>
+        </TR>
+
+        </TABLE>
+        </fieldset>
+    </FORM>
+    <div class="btn">
+     <button type="submit" class="abc">SUBMIT </button>
+     </div>
+    </body>
+</html>

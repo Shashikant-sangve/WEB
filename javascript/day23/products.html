@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Products</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <nav>
+        <a href="home.html">Home</a>
+        <a href="login.html">Login</a>
+        <a href="register.html">Register</a>
+        <a href="cart.html">Cart</a>
+        <a href="products.html">Products</a>
+    </nav>
+
+    <h1 class="page-title">Our Products</h1>
+
+    <div class="products">
+
+
+        <!-- MOBILE -->
+
+        <div class="card">
+
+            <img src="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?w=400" alt="Mobile">
+
+            <h2>Mobile</h2>
+
+            <div class="rating">
+                <span>★</span>
+                <span>★</span>
+                <span>★</span>
+                <span>★</span>
+                <span>★</span>
+                <small>4.8</small>
+            </div>
+
+            <p class="description">
+                Powerful smartphone with a clear display, excellent camera and long-lasting battery.
+            </p>
+
+            <p class="price">₹20,000</p>
+
+            <button onclick="addToCart('Mobile', 20000)">
+            Add to Cart
+        </button>
+
+        </div>
+
+
+        <!-- LAPTOP -->
+
+        <div class="card">
+
+            <img src="https://images.unsplash.com/photo-1496181133206-80ce9b88a853?w=400" alt="Laptop">
+
+            <h2>Laptop</h2>
+
+            <div class="rating">
+                <span>★</span>
+                <span>★</span>
+                <span>★</span>
+                <span>★</span>
+                <span class="empty">★</span>
+                <small>4.2</small>
+            </div>
+
+            <p class="description">
+                Fast and reliable laptop suitable for work, study, programming and entertainment.
+            </p>
+
+            <p class="price">₹50,000</p>
+
+            <button onclick="addToCart('Laptop', 50000)">
+            Add to Cart
+        </button>
+
+        </div>
+
+
+        <!-- HEADPHONES -->
+
+        <div class="card">
+
+            <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=400" alt="Headphones">
+
+            <h2>Headphones</h2>
+
+            <div class="rating">
+                <span>★</span>
+                <span>★</span>
+                <span>★</span>
+                <span>★</span>
+                <span>★</span>
+                <small>4.9</small>
+            </div>
+
+            <p class="description">
+                Comfortable wireless headphones with rich sound quality and powerful bass.
+            </p>
+
+            <p class="price">₹2,000</p>
+
+            <button onclick="addToCart('Headphones', 2000)">
+            Add to Cart
+        </button>
+
+        </div>
+
+
+        <!-- WATCH -->
+
+        <div class="card">
+
+            <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=400" alt="Watch">
+
+            <h2>Watch</h2>
+
+            <div class="rating">
+                <span>★</span>
+                <span>★</span>
+                <span>★</span>
+                <span>★</span>
+                <span class="empty">★</span>
+                <small>4.3</small>
+            </div>
+
+            <p class="description">
+                Stylish wrist watch with a modern design, durable build and comfortable strap.
+            </p>
+
+            <p class="price">₹3,000</p>
+
+            <button onclick="addToCart('Watch', 3000)">
+            Add to Cart
+        </button>
+
+        </div>
+
+
+        <!-- SHOES -->
+
+        <div class="card">
+
+            <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=400" alt="Shoes">
+
+            <h2>Shoes</h2>
+
+            <div class="rating">
+                <span>★</span>
+                <span>★</span>
+                <span>★</span>
+                <span>★</span>
+                <span>★</span>
+                <small>4.7</small>
+            </div>
+
+            <p class="description">
+                Lightweight and comfortable shoes designed for everyday use, walking and casual wear.
+            </p>
+
+            <p class="price">₹2,500</p>
+
+            <button onclick="addToCart('Shoes', 2500)">
+            Add to Cart
+        </button>
+
+        </div>
+
+
+        <!-- BAG -->
+
+        <div class="card">
+
+            <img src="https://images.unsplash.com/photo-1553062407-98eeb64c6a62?w=400" alt="Bag">
+
+            <h2>Bag</h2>
+
+            <div class="rating">
+                <span>★</span>
+                <span>★</span>
+                <span>★</span>
+                <span>★</span>
+                <span class="empty">★</span>
+                <small>4.4</small>
+            </div>
+
+            <p class="description">
+                Spacious and stylish bag with multiple compartments for daily essentials.
+            </p>
+
+            <p class="price">₹1,500</p>
+
+            <button onclick="addToCart('Bag', 1500)">
+            Add to Cart
+        </button>
+
+        </div>
+
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

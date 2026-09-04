@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+        let a = 10;
+        let b = 20;
+
+        //Arithmetic
+        console.log(a + b); //30
+        console.log(a - b); //-10
+        console.log(a * b); //200
+        console.log(a / b); //2
+        console.log(a % b); //0
+        console.log(a++); //10
+        console.log(a); //11
+        console.log(++b); //21
+        console.log(--a); //10
+        console.log(b--); //21
+        console.log(b); //20
+        console.log(2 ** 4); //16
+        console.log("========================");
+
+        //Assignment
+        let x = 10
+        console.log(x); //10
+        //x=x+5
+        // console.log(x);//15
+        x += 5
+        console.log(x); //15
+        x - +5
+        console.log(x); //10
+        x *= 3
+        console.log(x); //30
+        x %= 5
+        console.log(x); //0
+
+        let d = 30
+        d /= 3
+        console.log(d); //30
+        d **= 3
+        console.log(d); //27000
+        console.log("=====================");
+
+        //relational
+        let e = 5,
+            r = 40
+        console.log(e > r); //false
+        console.log(e < r); //true
+        console.log(e >= r); //false
+        console.log(e <= r); //true
+        console.log(5 == "5"); //true
+        console.log(5 != '5'); //false 
+        console.log(5 === "5"); //false
+        console.log(5 !== "5"); //true
+
+        //logical
+        console.log((5 < 4) && (4 < 9)); //true
+        //             t          t
+        console.log((5 < 4) && (4 < 9)); //false
+        //             f          t
+        console.log((5 < 4) && (4 > 9)); //false
+        //             f          f
+        console.log((5 > 4) && (4 > 9)); //false
+        //             t          f
+        console.log((5 > 4) || (4 < 9)); //true
+        //             t          t
+        console.log((5 < 4) || (4 < 9)); //true
+        //              f          t
+        console.log((5 < 4) || (4 > 9)); //false
+        //              f          f
+        console.log((5 > 4) || (4 > 9)); //true
+        //             t          f
+
+        console.log(!true); //false
+    </script>
+
+</body>
+
+</html>
